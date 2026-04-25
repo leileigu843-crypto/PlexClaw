@@ -1,151 +1,151 @@
-# PlexClaw - 图形化 AI 助手详细介绍
+# PlexClaw - Desktop AI Assistant
 
-## 产品概述
+## Overview
 
-**PlexClaw** 是一款跨平台桌面 AI 助手应用程序，为 OpenClaw AI 智能体运行时提供直观的图形化界面。基于 Electron 框架构建，采用 React 19 + TypeScript + Vite 技术栈，支持 Windows、macOS 和 Linux 三大平台。
+**PlexClaw** is a cross-platform desktop AI assistant application that provides an intuitive graphical interface for the OpenClaw AI agent runtime. Built on Electron, using React 19 + TypeScript + Vite, supporting Windows, macOS, and Linux.
 
 ---
 
-## 实际功能模块
+## Features
 
-### 1. 聊天
-- 多会话管理，支持创建新对话
-- 会话历史按时间分组（今天、昨天、本周、两周内、本月、更早）
-- 支持多智能体切换
-- 实时 AI 对话交互
+### 1. Chat
+- Multi-session management with new conversation support
+- Session history grouped by time (Today, Yesterday, This Week, Last Two Weeks, This Month, Older)
+- Multi-agent switching
+- Real-time AI conversation
 
-### 2. 代理管理
-- 创建、配置和管理多个 AI 智能体
-- 智能体与渠道账号绑定
-- 支持不同渠道的默认账号配置
-- 智能体状态监控
+### 2. Agent Management
+- Create, configure, and manage multiple AI agents
+- Agent-channel account binding
+- Default account configuration per channel
+- Agent status monitoring
 
-### 3. 频道管理
-支持多种即时通讯平台接入：
+### 3. Channel Management
+Supported messaging platforms:
 - Telegram
 - Discord
 - WhatsApp
-- 微信
-- 钉钉
-- 飞书
-- 企业微信
+- WeChat
+- DingTalk
+- Feishu
+- WeCom
 - QQ
 
-功能包括：
-- 账号配置和连接状态监控
-- 二维码登录支持
-- 账号删除和刷新
-- 连接状态实时显示
+Features:
+- Account configuration and connection status
+- QR code login support
+- Account deletion and refresh
+- Real-time connection status display
 
-### 4. 技能管理
-- 浏览和搜索可用技能
-- 技能安装/卸载
-- 技能启用/禁用
-- 支持本地技能和社区技能
-- 技能详情查看
+### 4. Skill Management
+- Browse and search available skills
+- Skill install/uninstall
+- Skill enable/disable
+- Local and community skills support
+- Skill details view
 
-### 5. 定时任务
-- Cron 表达式配置
-- 预设定时规则（每分钟、每5分钟、每小时、每天等）
-- 任务启用/暂停
-- 任务执行历史查看
-- 支持不同渠道的任务分发
+### 5. Scheduled Tasks
+- Cron expression configuration
+- Preset schedules (every minute, every 5 minutes, hourly, daily, etc.)
+- Task enable/pause
+- Execution history view
+- Channel-specific task distribution
 
-### 6. 数据分析
-- 会话数
-- 消息数
-- 平均响应时间
-- 时间分布
+### 6. Analytics
+- Session count
+- Message count
+- Average response time
+- Time distribution
 
-### 7. 设置
-- 网关设置
-- 界面主题切换（浅色、浅绿、深色、跟随系统）
-- 语言切换（中文、英文、日文、俄文）
-- 开发者工具（OpenClaw Doctor 诊断）
-
----
-
-## 开发者功能
-
-### OpenClaw Gateway 集成
-- 内置 OpenClaw 后端服务管理
-- 自动启动和监控 Gateway 进程（端口 18789）
-- 网关状态实时显示
-
-### 开发者控制台
-- 通过侧边栏快速打开 OpenClaw 控制台
-- 实时日志查看和调试
-
-### 诊断工具
-- 内置 `openclaw doctor` 诊断命令
-- 一键环境检测和修复
-- JSON 格式诊断报告
+### 7. Settings
+- Gateway settings
+- Theme switching (Light, Light Green, Dark, System)
+- Language switching (Chinese, English, Japanese, Russian)
+- Developer tools (OpenClaw Doctor diagnostics)
 
 ---
 
-## 界面特性
+## Developer Features
 
-### 侧边栏导航
-- 可折叠侧边栏
-- 会话历史按时间分组显示
-- 快速切换会话
-- 会话删除功能
-- 外部链接（官方网站、充值中心）
+### OpenClaw Gateway Integration
+- Built-in OpenClaw backend service management
+- Auto-start and monitor Gateway process (port 18789)
+- Real-time gateway status display
 
-### 多语言支持
-- 中文
-- 英文
-- 日文
-- 俄文
+### Developer Console
+- Quick access to OpenClaw console via sidebar
+- Real-time log viewing and debugging
 
-### 多主题支持
-- 浅色主题
-- 浅绿主题
-- 深色主题
-- 跟随系统主题
-
-### 用户体验
-- 响应式设计
-- 现代化 UI 设计 (Radix UI + Tailwind CSS)
-- 流畅的动画效果 (Framer Motion)
-- Toast 通知系统
-
-## 安全特性
-
-- API 密钥使用操作系统密钥链安全存储
-- 遥测数据仅本地存储
-- 不支持第三方插件的自动下载执行
+### Diagnostic Tools
+- Built-in `openclaw doctor` command
+- One-click environment detection and repair
+- JSON format diagnostic reports
 
 ---
 
-## 系统要求
+## Interface Features
 
-| 平台 | 最低版本 | 架构 |
-|------|---------|------|
+### Sidebar Navigation
+- Collapsible sidebar
+- Session history grouped by time
+- Quick session switching
+- Session deletion
+- External links (Website, Recharge Center)
+
+### Multi-language Support
+- Chinese
+- English
+- Japanese
+- Russian
+
+### Multi-theme Support
+- Light theme
+- Light Green theme
+- Dark theme
+- System theme
+
+### User Experience
+- Responsive design
+- Modern UI (Radix UI + Tailwind CSS)
+- Smooth animations (Framer Motion)
+- Toast notification system
+
+## Security Features
+
+- API keys stored securely in OS keychain
+- Telemetry data stored locally only
+- No automatic download/execution of third-party plugins
+
+---
+
+## System Requirements
+
+| Platform | Minimum Version | Architecture |
+|----------|----------------|--------------|
 | Windows | Windows 10 | x64 |
 | macOS | macOS 12+ | x64, arm64 (Apple Silicon) |
 | Linux | Ubuntu 22.04+ | x64, arm64 |
 
 ---
 
-## 核心优势总结
+## Key Advantages
 
-1. **跨平台支持**: 一套代码支持 Windows、macOS、Linux 三大平台
-2. **现代化技术栈**: 采用最新的 React 19、Electron 40 等技术
-3. **多平台通讯接入**: 支持 8 种主流即时通讯平台
-4. **智能体管理**: 灵活的智能体配置和渠道绑定
-5. **技能系统**: 可扩展的插件架构，支持技能安装和管理
-6. **定时任务**: 强大的 Cron 任务调度功能
-7. **数据分析**: Token 使用和成本追踪
-8. **开发者友好**: 完整的开发工具链、测试体系和诊断工具
-9. **安全可靠**: 密钥链存储、本地数据
-10. **国际化支持**: 4种语言，覆盖全球用户
-11. **开源免费**: MIT 许可证
+1. **Cross-platform**: Single codebase supports Windows, macOS, Linux
+2. **Modern tech stack**: React 19, Electron 40
+3. **Multi-platform messaging**: 8 major messaging platforms
+4. **Agent management**: Flexible agent configuration and channel binding
+5. **Skill system**: Extensible plugin architecture
+6. **Scheduled tasks**: Powerful Cron job scheduling
+7. **Analytics**: Token usage and cost tracking
+8. **Developer-friendly**: Complete dev tools, testing, and diagnostics
+9. **Secure**: Keychain storage, local data
+10. **Internationalization**: 4 languages
+11. **Open source**: MIT License
 
 ---
 
-## 项目信息
+## Project Info
 
-- **官网**: https://plexai.ai
-- **许可证**: MIT
-- **当前版本**: 2026.4.11
+- **Website**: https://plexai.ai
+- **License**: MIT
+- **Current Version**: 2026.4.11
